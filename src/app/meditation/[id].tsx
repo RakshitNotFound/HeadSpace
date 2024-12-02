@@ -2,6 +2,7 @@ import { Link, useLocalSearchParams } from "expo-router"
 import { Text, View, Pressable} from "react-native"
 import { meditations } from "../../data";
 import { router } from "expo-router";
+import AnimatedBackground from "@/components/AnimatedBackground";
 import audio from '@assets/meditations/audio1.mp3'
 import Slider from "@react-native-community/slider";
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
@@ -31,7 +32,8 @@ export default function MeditationDetails(){
 
     return (
     <SafeAreaView className="bg-orange-500 flex-1 p-2 justify-between">
-      
+      <AnimatedBackground/>
+
       <View className="flex-1">
 
       <View className="flex-1">
